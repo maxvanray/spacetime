@@ -1,11 +1,20 @@
 <?php /*
-<h1 class="page-header">Dashboard: {{ Auth::user()->name }}</h1>
+<h1 class="page-header">Dashboard: @if (Auth::guest())
+								Guest
+							@else
+								{{ Auth::user()->name }}
+							@endif</h1>
 */ ?>
 
 
 
 <div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
-	<h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-home"></i> Dashboard <span>> My Dashboard</span></h1>
+	<h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-home"></i> Dashboard <span>>
+	@if (Auth::guest())
+		Guest
+	@else
+		{{ Auth::user()->name }}
+	@endif</span></h1>
 </div>
 
 
@@ -13,6 +22,7 @@
 
 
 		  <div class="row placeholders">
+		  	<div class="col-md-12 col-lg-12">
 				<div class="col-xs-6 col-sm-3 placeholder">
 				  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
 				  <h4>Label</h4>
@@ -33,6 +43,7 @@
 				  <h4>Label</h4>
 				  <span class="text-muted">Something else</span>
 				</div>
+			</div>
 		  </div>
 
 		  <h2 class="sub-header">Registration History</h2>

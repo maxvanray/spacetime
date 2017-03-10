@@ -33,7 +33,7 @@
 		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700">
 
 	    <!-- Styles -->
-	    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+	    <link href="{{ asset('css/dashboard.css') }}" rel="stylesheet">
 
 
 		<!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
