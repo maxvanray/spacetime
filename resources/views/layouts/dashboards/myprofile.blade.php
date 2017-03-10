@@ -1,9 +1,12 @@
+<?php /*
 <h1 class="page-header">Dashboard: {{ Auth::user()->name }}</h1>
+*/ ?>
 
 
 
-
-
+<div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
+	<h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-home"></i> Dashboard <span>> My Dashboard</span></h1>
+</div>
 
 
 

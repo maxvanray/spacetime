@@ -7,6 +7,7 @@
 @section('content')
 
 <?php
+
 switch ($section) {
 
     case 'myprofile':
@@ -76,6 +77,14 @@ switch ($section) {
 
 }
 ?>
+@endsection
 
+@section('legroom')
+<?php
+switch ($section) {
+    case 'manage-schedule': ?>
+            @include('layouts.dashboards.schedule-legroom')
+    <?php break;
 
+} ?>
 @endsection

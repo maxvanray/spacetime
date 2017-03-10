@@ -5,7 +5,7 @@
 
   <body class="{{ $section }}">
 
-    @include('layouts.navigation')
+    @include('layouts.dashboard-navigation')
     @section('container')
 
     @show
